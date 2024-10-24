@@ -1,7 +1,202 @@
-Hello World 
-<img src= "https://raw.githubusercontent.com/ClarckD02/MathdataSci24/main/horses%20on%20highway.png" width=400>
-<img src= "https://raw.githubusercontent.com/ClarckD02/MathdataSci24/main/blackbelt_chicken%20.png" width=400>
-<img src= "https://raw.githubusercontent.com/ClarckD02/MathdataSci24/main/video_game_bears.png" width=400>
-<img src= "https://raw.githubusercontent.com/ClarckD02/MathdataSci24/main/grandmaster_shark.png" width=400>
-<img src= "https://raw.githubusercontent.com/ClarckD02/MathdataSci24/main/paradise.png" width=400>
-<img src= "https://raw.githubusercontent.com/ClarckD02/MathdataSci24/main/cat_on_phone.png" width=400>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feather Focus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #333;
+            padding: 1em;
+            color: #fff;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .hero {
+            height: 60vh;
+            background: url('https://images.unsplash.com/photo-1516685304081-de7947d419d4?fit=crop&w=1200&h=800&q=80') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        
+        .cta-button {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 0.8em 1.5em;
+            border: none;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #0097a7;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        
+        .about, .services, .contact {
+            padding: 2em 0;
+            background-color: #f4f4f4;
+        }
+        
+        .service-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5em;
+        }
+        
+        .service-card {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin-bottom: 1em;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Feather Focus</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Feather Focus</h1>
+                <p>Leveraging AI to understand and classify avian species with precision.</p>
+                <a href="#about" class="cta-button">Learn More</a>
+            </div>
+        </section>
+        
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Feather Focus is a cutting-edge startup using advanced machine learning to classify and understand different bird species. Our goal is to make bird research accessible and actionable for enthusiasts, researchers, and conservationists.</p>
+            </div>
+        </section>
+        
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <h3>AI Bird Classifier</h3>
+                        <p>Our AI model can differentiate between various bird species to help researchers and enthusiasts gain insights quickly.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Data Analysis</h3>
+                        <p>Gain data-driven insights into bird populations and trends using our analysis tools.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Consulting</h3>
+                        <p>Our team provides consulting services for conservation projects involving avian species.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you're interested in collaborating with us or learning more, get in touch:</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Feather Focus. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
