@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feather Focus</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
         }
         
         header {
-            background-color: #333;
+            background-color: #3a3a3a;
             padding: 1em;
             color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
         .logo {
             display: flex;
             align-items: center;
             font-weight: bold;
-            font-size: 1.5em;
+            font-size: 1.8em;
         }
         
         .logo svg {
@@ -44,18 +50,23 @@
         }
         
         .nav-links li {
-            margin-left: 20px;
+            margin-left: 25px;
         }
         
         .nav-links a {
             color: #fff;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #00bcd4;
         }
         
         .hero {
-            height: 60vh;
-            background: url('https://images.unsplash.com/photo-1516685304081-de7947d419d4?fit=crop&w=1200&h=800&q=80') no-repeat center center/cover;
+            height: 70vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1516685304081-de7947d419d4?fit=crop&w=1200&h=800&q=80') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,23 +75,31 @@
         }
         
         .hero-content h1 {
-            font-size: 3em;
+            font-size: 4em;
             margin-bottom: 0.5em;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+            max-width: 600px;
         }
         
         .cta-button {
             background-color: #00bcd4;
             color: #fff;
-            padding: 0.8em 1.5em;
+            padding: 1em 2em;
             border: none;
             text-decoration: none;
             font-weight: 700;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
         }
         
         .cta-button:hover {
             background-color: #0097a7;
+            transform: translateY(-3px);
         }
         
         .container {
@@ -90,51 +109,70 @@
         }
         
         .about, .services, .contact {
-            padding: 2em 0;
-            background-color: #f4f4f4;
+            padding: 4em 0;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
         }
         
         .service-cards {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             gap: 1.5em;
         }
         
         .service-card {
-            background-color: #fff;
+            background-color: #f9f9f9;
             padding: 2em;
-            border-radius: 8px;
+            border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             flex: 1;
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h3 {
+            margin-top: 0;
+            color: #00bcd4;
         }
         
         .contact-form input, .contact-form textarea {
             width: 100%;
             margin-bottom: 1em;
-            padding: 1em;
+            padding: 1.2em;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 1em;
         }
         
         .contact-form button {
-            background-color: #333;
+            background-color: #00bcd4;
             color: #fff;
-            padding: 1em;
+            padding: 1em 2em;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            border-radius: 50px;
+            font-size: 1em;
+            font-weight: 700;
+            transition: background-color 0.3s, transform 0.3s;
         }
         
         .contact-form button:hover {
-            background-color: #555;
+            background-color: #0097a7;
+            transform: translateY(-3px);
         }
         
         footer {
-            background-color: #333;
+            background-color: #3a3a3a;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
+            padding: 2em 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
