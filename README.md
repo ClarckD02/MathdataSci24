@@ -1,5 +1,8 @@
 # MathdataSci24
-Class Notes 
+**Project Links**
+
+[Colab Alexnet](https://colab.research.google.com/drive/1dJ9hy2ZEUSRW_3sDu2ETEQpWd0hdA2cT?usp=sharing)
+
 
 [WEBSITE](https://clarckd02.github.io/MathdataSci24/) 
 [GAMMA_WEBSITE](https://tinyurl.com/bdh7xhta) 
