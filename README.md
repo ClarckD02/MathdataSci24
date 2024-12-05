@@ -7,6 +7,10 @@
 [Pitch Deck/ Technical](https://docs.google.com/presentation/d/1LDr3pwWpPrNv63b0ZeqHVNBMPA3Prl5RnIs9eD_YIvI/edit?usp=sharing) 
 
 
+
+[video](https://youtu.be/tmuJIxEtbjU)
+
+
 [WEBSITE](https://clarckd02.github.io/MathdataSci24/) 
 
 
