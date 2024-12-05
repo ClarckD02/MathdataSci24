@@ -8,7 +8,7 @@
 
 
 
-[Video](https://youtu.be/tmuJIxEtbjU](https://youtu.be/ECQWW_8qsJU))
+[Video](https://youtu.be/ECQWW_8qsJU)
 
 
 [WEBSITE](https://clarckd02.github.io/MathdataSci24/) 
